@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            body, html {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+            }
+            button {
+                height: 25px;
+                width: 100px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-items: space-evenly;
+            }
+            
+            /* li is implemented in JS on showUsers() function in createElement */
+            li{
+                list-style: none;
+            }
+            
+            .input {
+                height: 25px;
+                width: 200px;
+            }
+            .div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+                text-align: center;
+            }
+            .users{
+                text-decoration: underline;
+                font-size: 25px;
+            }
+        </style>
+        <title>Assingments</title>
+    </head>
+    <body>
+        <div class="div">
+        <input class="input" id="name" type="text" placeholder="Your name" />
+        <input class="input" id="lastname" type="text" placeholder="Your lastname" />
+        <input class="input" id="email" type="email" placeholder="Your email" />
+        <button id="btn" onclick="submitData()">Submit data</button>
+        <button id="btn2" onclick="showUsers()">Show users</button>
+        <!-- <button onclick="nulishOpPlus()">?? nullish operator test +</button>
+        <button onclick="nulishOpMinus()">?? nullish operator test -</button>
+        <div id="test"></div> -->
+        <div class="users"><strong><i>Users:</i></strong></div>
+        <ul id="ul" style="font-size: 20px"></ul>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
